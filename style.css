@@ -1,0 +1,167 @@
+/* CSS SIMPLES para o Diário de Bordo */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #320e61;
+  padding: 2rem;
+}
+
+header {
+  background: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+h1 {
+  color: #020202;
+  font-size: 1.8rem;
+  flex: 1;
+}
+
+.install-btn {
+  background: #6729a5;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  }
+}
+
+section {
+  background: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #020202;
+  margin-bottom: 1.5rem;
+}
+
+form div {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 1rem;
+  font-size: 1rem;
+  &:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #b821f3;
+  }
+}
+
+button {
+  background: #3f0886;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-size: 16px;
+
+  &:hover {
+    background: #310a52;
+  }
+}
+
+#list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.entry {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 3px solid #571086;
+}
+
+.entry h3 {
+  color: #2c0845;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.entry small {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.entry p {
+  margin: 0.5rem 0 1rem 0;
+  line-height: 1.6;
+}
+
+.entry button {
+  background: #a10a0a;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  &:hover {
+    background: #410505;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0.8rem;
+  }
+
+  header {
+    gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .install-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  #list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .entry {
+    padding: 1rem;
+  }
+}

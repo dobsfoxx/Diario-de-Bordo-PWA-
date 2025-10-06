@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diário de Bordo</title>
+
+    <meta name="theme-color" content="#320e61">
+    <meta name="description" content="Aplicativo para registrar suas atividades diárias">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="icons/icon.svg" sizes="any">
+    <link rel="apple-touch-icon" href="icons/icon-192-simple.svg">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <header>
+        <h1> Diário de Bordo</h1>
+        <button id="installButton" class="install-btn" style="display: none;">
+            📱 Instalar App
+        </button>
+    </header>
+
+    <section>
+        <h2>✍️Nova Anotação</h2>
+        <form id="form">
+            <div>
+                <label for="title">Título:</label>
+                <input type="text" id="title" required>
+            </div>
+            
+            <div>
+                <label for="date">Data:</label>
+                <input type="date" id="date" required>
+            </div>
+            
+            <div>
+                <label for="description">Descrição:</label>
+                <textarea id="description" required rows="4"></textarea>
+            </div>
+            
+            <button type="submit">Salvar Anotação</button>
+        </form>
+    </section>
+
+    <section className="list">
+        <h2>Minhas Anotações</h2>
+        <div id="list"></div>
+        <div id="emptyList">
+            <p>Nenhuma anotação ainda.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
