@@ -76,12 +76,13 @@ textarea {
   border: 2px solid #ddd;
   border-radius: 1rem;
   font-size: 1rem;
-  &:focus,
+}
+  input:focus,
   textarea:focus {
     outline: none;
     border-color: #b821f3;
   }
-}
+
 
 button {
   background: #3f0886;
@@ -91,11 +92,11 @@ button {
   border-radius: 0.8rem;
   cursor: pointer;
   font-size: 16px;
-
-  &:hover {
+}
+  button:hover {
     background: #310a52;
   }
-}
+
 
 #list {
   display: grid;
@@ -131,10 +132,11 @@ button {
   background: #a10a0a;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  &:hover {
+}
+  entry:hover {
     background: #410505;
   }
-}
+
 
 @media (max-width: 768px) {
   body {
